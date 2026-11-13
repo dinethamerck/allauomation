@@ -1,0 +1,18 @@
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+.auth/
+
+
+# Node modules
+node_modules/
+
+# Playwright reports & artifacts
+test-results/
+playwright-report/
+playwright-report-unit/
+blob-report/
+playwright/.cache/
+*.png
+*.webm

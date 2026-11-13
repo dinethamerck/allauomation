@@ -1,0 +1,636 @@
+◇ injected env (3) from .env
+◇ injected env (0) from .env
+[global-setup] Auth token is valid until 2026-11-03T08:53:08.000Z
+
+Running 39 tests using 1 worker
+
+◇ injected env (0) from .env
+  ok  1 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:64:5 › EMR-67 Social History - No. of Children whole-number validation › A. Rendering › EMR67-TC-01 all four children count fields are displayed under "No. of Children" (19.7s)
+  ok  2 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:74:5 › EMR-67 Social History - No. of Children whole-number validation › A. Rendering › EMR67-TC-02 every children field is a numeric input with minimum 0 (22.3s)
+  ok  3 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:87:5 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-03 accepts 0 (boundary minimum) in every field (21.4s)
+  ok  4 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:96:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 1 in every field (23.4s)
+  ok  5 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:96:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 2 in every field (24.1s)
+  ok  6 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:96:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 3 in every field (24.1s)
+  ok  7 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:96:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 12 in every field (22.3s)
+  ok  8 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:105:5 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-05 ArrowUp/ArrowDown step by 1 and never go below 0 (22.5s)
+  x   9 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Male (22.2s)
+◇ injected env (0) from .env
+  x  10 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Female (24.5s)
+◇ injected env (0) from .env
+  x  11 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Male (23.7s)
+◇ injected env (0) from .env
+  x  12 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Female (23.7s)
+◇ injected env (0) from .env
+  x  13 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:129:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-07 typing a fraction below one ("0.5") is rejected (23.7s)
+◇ injected env (0) from .env
+  x  14 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:134:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-08 pasting a decimal ("2.75") is rejected (23.7s)
+◇ injected env (0) from .env
+  x  15 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:139:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-09 typing a decimal with a zero fraction ("2.0") is stored as the whole number 2 (26.7s)
+◇ injected env (0) from .env
+  x  16 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:145:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-10 comma decimal "1,5" must not silently become 15 (18.6s)
+◇ injected env (0) from .env
+  ok 17 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:156:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-11 typing "-1" never produces a negative value (29.4s)
+  ok 18 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:163:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-12 pasting "-3" never produces a negative value (24.1s)
+  ok 19 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:168:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-13 scientific notation ("1e2") is not accepted as 100 (25.0s)
+  ok 20 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:175:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-14 letters and symbols ("abc", "+", "#") are ignored (24.8s)
+  ok 21 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:185:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-15 valid whole numbers are saved exactly and persist after reload (34.9s)
+  ok 22 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:197:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-16 totals equal Male + Female for each group (25.3s)
+  x  23 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:207:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-17 a decimal value cannot be saved (27.8s)
+◇ injected env (0) from .env
+  x  24 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:219:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-18 the saved record and its total never disagree (26.0s)
+◇ injected env (0) from .env
+  ok 25 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:227:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-19 a count can be cleared (field is optional) and stays cleared after reload (29.1s)
+  ok 26 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:242:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-20 summary shows the entered whole numbers (22.5s)
+  x  27 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:249:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-21 summary never shows a value different from what was entered (26.1s)
+◇ injected env (0) from .env
+  x  28 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenMale (20.2s)
+◇ injected env (0) from .env
+  x  29 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenFemale (20.2s)
+◇ injected env (0) from .env
+  x  30 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenMale (19.2s)
+◇ injected env (0) from .env
+  x  31 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenFemale (25.8s)
+◇ injected env (0) from .env
+  x  32 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal string "1.5" and does not store it (25.8s)
+◇ injected env (0) from .env
+  x  33 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal number 2.5 and does not store it (19.0s)
+◇ injected env (0) from .env
+  x  34 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects negative "-1" and does not store it (18.4s)
+◇ injected env (0) from .env
+  x  35 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects non-numeric "abc" and does not store it (18.9s)
+◇ injected env (0) from .env
+  ok 36 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:289:5 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-24 API accepts a valid whole number (24.2s)
+  ok 37 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:300:5 › EMR-67 Social History - No. of Children whole-number validation › H. Regression › EMR67-TC-25 Occupation still accepts free text and saves (27.6s)
+  ok 38 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:310:5 › EMR-67 Social History - No. of Children whole-number validation › H. Regression › EMR67-TC-26 Continue moves to Step 9 (Drug History) with valid counts (22.4s)
+  x  39 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:322:5 › EMR-67 Social History - No. of Children whole-number validation › I. Additional findings › EMR67-OBS-01 a single edit made right after opening the draft is saved (20.4s)
+
+
+  1) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Male 
+
+    Error: field must not hold a decimal
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "1.5"
+
+      123 |       test(`EMR67-TC-06 typing "1.5" is rejected in ${label(f)}`, async () => {
+      124 |         await sh.typeChildren(f.group, f.gender, '1.5');
+    > 125 |         expect(await sh.getChildren(f.group, f.gender), 'field must not hold a decimal').toMatch(WHOLE_OR_EMPTY);
+          |                                                                                          ^
+      126 |       });
+      127 |     }
+      128 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:125:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-d60d9--rejected-in-Dependent-Male-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-d60d9--rejected-in-Dependent-Male-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-d60d9--rejected-in-Dependent-Male-chromium\error-context.md
+
+  2) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Female 
+
+    Error: field must not hold a decimal
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "1.5"
+
+      123 |       test(`EMR67-TC-06 typing "1.5" is rejected in ${label(f)}`, async () => {
+      124 |         await sh.typeChildren(f.group, f.gender, '1.5');
+    > 125 |         expect(await sh.getChildren(f.group, f.gender), 'field must not hold a decimal').toMatch(WHOLE_OR_EMPTY);
+          |                                                                                          ^
+      126 |       });
+      127 |     }
+      128 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:125:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-7b3e4-ejected-in-Dependent-Female-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-7b3e4-ejected-in-Dependent-Female-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-7b3e4-ejected-in-Dependent-Female-chromium\error-context.md
+
+  3) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Male 
+
+    Error: field must not hold a decimal
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "1.5"
+
+      123 |       test(`EMR67-TC-06 typing "1.5" is rejected in ${label(f)}`, async () => {
+      124 |         await sh.typeChildren(f.group, f.gender, '1.5');
+    > 125 |         expect(await sh.getChildren(f.group, f.gender), 'field must not hold a decimal').toMatch(WHOLE_OR_EMPTY);
+          |                                                                                          ^
+      126 |       });
+      127 |     }
+      128 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:125:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-48783-ejected-in-Independent-Male-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-48783-ejected-in-Independent-Male-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-48783-ejected-in-Independent-Male-chromium\error-context.md
+
+  4) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Female 
+
+    Error: field must not hold a decimal
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "1.5"
+
+      123 |       test(`EMR67-TC-06 typing "1.5" is rejected in ${label(f)}`, async () => {
+      124 |         await sh.typeChildren(f.group, f.gender, '1.5');
+    > 125 |         expect(await sh.getChildren(f.group, f.gender), 'field must not hold a decimal').toMatch(WHOLE_OR_EMPTY);
+          |                                                                                          ^
+      126 |       });
+      127 |     }
+      128 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:125:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fec02-ected-in-Independent-Female-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fec02-ected-in-Independent-Female-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-fec02-ected-in-Independent-Female-chromium\error-context.md
+
+  5) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:129:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-07 typing a fraction below one ("0.5") is rejected 
+
+    Error: expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "0.5"
+
+      129 |     test('EMR67-TC-07 typing a fraction below one ("0.5") is rejected', async () => {
+      130 |       await sh.typeChildren('Dependent', 'Female', '0.5');
+    > 131 |       expect(await sh.getChildren('Dependent', 'Female')).toMatch(WHOLE_OR_EMPTY);
+          |                                                           ^
+      132 |     });
+      133 |
+      134 |     test('EMR67-TC-08 pasting a decimal ("2.75") is rejected', async () => {
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:131:59
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-ab468-n-below-one-0-5-is-rejected-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-ab468-n-below-one-0-5-is-rejected-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-ab468-n-below-one-0-5-is-rejected-chromium\error-context.md
+
+  6) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:134:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-08 pasting a decimal ("2.75") is rejected 
+
+    Error: expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "2.75"
+
+      134 |     test('EMR67-TC-08 pasting a decimal ("2.75") is rejected', async () => {
+      135 |       await sh.pasteChildren('Independent', 'Male', '2.75');
+    > 136 |       expect(await sh.getChildren('Independent', 'Male')).toMatch(WHOLE_OR_EMPTY);
+          |                                                           ^
+      137 |     });
+      138 |
+      139 |     test('EMR67-TC-09 typing a decimal with a zero fraction ("2.0") is stored as the whole number 2', async () => {
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:136:59
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-c6202--a-decimal-2-75-is-rejected-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-c6202--a-decimal-2-75-is-rejected-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-c6202--a-decimal-2-75-is-rejected-chromium\error-context.md
+
+  7) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:139:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-09 typing a decimal with a zero fraction ("2.0") is stored as the whole number 2 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "2.0"
+
+      140 |       const saved = await sh.enterAndCaptureSave([['Independent', 'Female', '2.0']]);
+      141 |       expect(saved, 'save request should be sent for a whole-number value').not.toBeNull();
+    > 142 |       expect(String(saved.independentChildrenFemale)).toBe('2');
+          |                                                       ^
+      143 |     });
+      144 |
+      145 |     test('EMR67-TC-10 comma decimal "1,5" must not silently become 15', async () => {
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:142:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-99f86-tored-as-the-whole-number-2-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-99f86-tored-as-the-whole-number-2-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-99f86-tored-as-the-whole-number-2-chromium\error-context.md
+
+  8) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:145:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-10 comma decimal "1,5" must not silently become 15 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "15"
+
+      146 |       // Clinical risk: users on comma-decimal keyboards typing "1,5" currently get 15 children.
+      147 |       await sh.typeChildren('Dependent', 'Male', '1,5');
+    > 148 |       expect(await sh.getChildren('Dependent', 'Male')).not.toBe('15');
+          |                                                             ^
+      149 |     });
+      150 |   });
+      151 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:148:61
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-9a92a-must-not-silently-become-15-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-9a92a-must-not-silently-become-15-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-9a92a-must-not-silently-become-15-chromium\error-context.md
+
+  9) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:207:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-17 a decimal value cannot be saved 
+
+    Error: dependentChildrenMale sent
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /^\d*$/
+    Received string:  "1.5"
+
+      209 |       if (saved) {
+      210 |         // Save was not blocked - nothing that was sent may be a decimal.
+    > 211 |         expect(String(saved.dependentChildrenMale), 'dependentChildrenMale sent').toMatch(WHOLE_OR_EMPTY);
+          |                                                                                   ^
+      212 |         expect(String(saved.dependentChildrenFemale), 'dependentChildrenFemale sent').toMatch(WHOLE_OR_EMPTY);
+      213 |       }
+      214 |       await sh.reloadAndReopen();
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:211:83
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-6ff03-cimal-value-cannot-be-saved-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-6ff03-cimal-value-cannot-be-saved-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-6ff03-cimal-value-cannot-be-saved-chromium\error-context.md
+
+  10) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:219:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-18 the saved record and its total never disagree 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 4.2
+    Received: 3
+
+      222 |       test.skip(!saved, 'save was blocked by UI validation - nothing to compare');
+      223 |       const sum = Number(saved.dependentChildrenMale || 0) + Number(saved.dependentChildrenFemale || 0);
+    > 224 |       expect(Number(saved.dependentChildrenCount)).toBe(sum);
+          |                                                    ^
+      225 |     });
+      226 |
+      227 |     test('EMR67-TC-19 a count can be cleared (field is optional) and stays cleared after reload', async () => {
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:224:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-9be39-nd-its-total-never-disagree-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-9be39-nd-its-total-never-disagree-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-9be39-nd-its-total-never-disagree-chromium\error-context.md
+
+  11) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:249:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-21 summary never shows a value different from what was entered 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Female: 1.5"
+    Received string:    "3 (Male: 2, Female: 1)"
+
+      254 |       await sh.openSummary();
+      255 |       const summary = await sh.getSummaryChildrenText('Dependent');
+    > 256 |       expect(summary).toContain(`Female: ${entered}`);
+          |                       ^
+      257 |     });
+      258 |   });
+      259 |
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:256:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-77ee3-erent-from-what-was-entered-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-77ee3-erent-from-what-was-entered-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-77ee3-erent-from-what-was-entered-chromium\error-context.md
+
+  12) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenMale 
+
+    Error: PUT dependentChildrenMale="1.5" should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      272 |       test(`EMR67-TC-22 API rejects a decimal for ${f.key}`, async () => {
+      273 |         const res = await sh.apiPutForm({ ...snapshot.data, [f.key]: '1.5' }, snapshot);
+    > 274 |         expect(res.status(), `PUT ${f.key}="1.5" should be rejected (4xx)`).toBeGreaterThanOrEqual(400);
+          |                                                                             ^
+      275 |         expect(res.status()).toBeLessThan(500);
+      276 |       });
+      277 |     }
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:274:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-e5da2-l-for-dependentChildrenMale-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-e5da2-l-for-dependentChildrenMale-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-e5da2-l-for-dependentChildrenMale-chromium\error-context.md
+
+  13) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenFemale 
+
+    Error: PUT dependentChildrenFemale="1.5" should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      272 |       test(`EMR67-TC-22 API rejects a decimal for ${f.key}`, async () => {
+      273 |         const res = await sh.apiPutForm({ ...snapshot.data, [f.key]: '1.5' }, snapshot);
+    > 274 |         expect(res.status(), `PUT ${f.key}="1.5" should be rejected (4xx)`).toBeGreaterThanOrEqual(400);
+          |                                                                             ^
+      275 |         expect(res.status()).toBeLessThan(500);
+      276 |       });
+      277 |     }
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:274:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-0cfbc-for-dependentChildrenFemale-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-0cfbc-for-dependentChildrenFemale-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-0cfbc-for-dependentChildrenFemale-chromium\error-context.md
+
+  14) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenMale 
+
+    Error: PUT independentChildrenMale="1.5" should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      272 |       test(`EMR67-TC-22 API rejects a decimal for ${f.key}`, async () => {
+      273 |         const res = await sh.apiPutForm({ ...snapshot.data, [f.key]: '1.5' }, snapshot);
+    > 274 |         expect(res.status(), `PUT ${f.key}="1.5" should be rejected (4xx)`).toBeGreaterThanOrEqual(400);
+          |                                                                             ^
+      275 |         expect(res.status()).toBeLessThan(500);
+      276 |       });
+      277 |     }
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:274:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fad9f-for-independentChildrenMale-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fad9f-for-independentChildrenMale-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-fad9f-for-independentChildrenMale-chromium\error-context.md
+
+  15) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenFemale 
+
+    Error: PUT independentChildrenFemale="1.5" should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      272 |       test(`EMR67-TC-22 API rejects a decimal for ${f.key}`, async () => {
+      273 |         const res = await sh.apiPutForm({ ...snapshot.data, [f.key]: '1.5' }, snapshot);
+    > 274 |         expect(res.status(), `PUT ${f.key}="1.5" should be rejected (4xx)`).toBeGreaterThanOrEqual(400);
+          |                                                                             ^
+      275 |         expect(res.status()).toBeLessThan(500);
+      276 |       });
+      277 |     }
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:274:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-079e5-r-independentChildrenFemale-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-079e5-r-independentChildrenFemale-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-079e5-r-independentChildrenFemale-chromium\error-context.md
+
+  16) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal string "1.5" and does not store it 
+
+    Error: should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      280 |       test(`EMR67-TC-23 API rejects ${name} and does not store it`, async () => {
+      281 |         const res = await sh.apiPutForm({ ...snapshot.data, dependentChildrenMale: value }, snapshot);
+    > 282 |         expect(res.status(), 'should be rejected (4xx)').toBeGreaterThanOrEqual(400);
+          |                                                          ^
+      283 |         expect(res.status()).toBeLessThan(500);
+      284 |         const stored = (await sh.apiGetForm()).data.dependentChildrenMale;
+      285 |         expect(String(stored ?? '')).toMatch(WHOLE_OR_EMPTY);
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:282:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fd8e4-g-1-5-and-does-not-store-it-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-fd8e4-g-1-5-and-does-not-store-it-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-fd8e4-g-1-5-and-does-not-store-it-chromium\error-context.md
+
+  17) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal number 2.5 and does not store it 
+
+    Error: should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      280 |       test(`EMR67-TC-23 API rejects ${name} and does not store it`, async () => {
+      281 |         const res = await sh.apiPutForm({ ...snapshot.data, dependentChildrenMale: value }, snapshot);
+    > 282 |         expect(res.status(), 'should be rejected (4xx)').toBeGreaterThanOrEqual(400);
+          |                                                          ^
+      283 |         expect(res.status()).toBeLessThan(500);
+      284 |         const stored = (await sh.apiGetForm()).data.dependentChildrenMale;
+      285 |         expect(String(stored ?? '')).toMatch(WHOLE_OR_EMPTY);
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:282:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-a1ed8-r-2-5-and-does-not-store-it-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-a1ed8-r-2-5-and-does-not-store-it-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-a1ed8-r-2-5-and-does-not-store-it-chromium\error-context.md
+
+  18) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects negative "-1" and does not store it 
+
+    Error: should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      280 |       test(`EMR67-TC-23 API rejects ${name} and does not store it`, async () => {
+      281 |         const res = await sh.apiPutForm({ ...snapshot.data, dependentChildrenMale: value }, snapshot);
+    > 282 |         expect(res.status(), 'should be rejected (4xx)').toBeGreaterThanOrEqual(400);
+          |                                                          ^
+      283 |         expect(res.status()).toBeLessThan(500);
+      284 |         const stored = (await sh.apiGetForm()).data.dependentChildrenMale;
+      285 |         expect(String(stored ?? '')).toMatch(WHOLE_OR_EMPTY);
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:282:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-4b03d-ve--1-and-does-not-store-it-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-4b03d-ve--1-and-does-not-store-it-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-4b03d-ve--1-and-does-not-store-it-chromium\error-context.md
+
+  19) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects non-numeric "abc" and does not store it 
+
+    Error: should be rejected (4xx)
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    200
+
+      280 |       test(`EMR67-TC-23 API rejects ${name} and does not store it`, async () => {
+      281 |         const res = await sh.apiPutForm({ ...snapshot.data, dependentChildrenMale: value }, snapshot);
+    > 282 |         expect(res.status(), 'should be rejected (4xx)').toBeGreaterThanOrEqual(400);
+          |                                                          ^
+      283 |         expect(res.status()).toBeLessThan(500);
+      284 |         const stored = (await sh.apiGetForm()).data.dependentChildrenMale;
+      285 |         expect(String(stored ?? '')).toMatch(WHOLE_OR_EMPTY);
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:282:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-79f69-c-abc-and-does-not-store-it-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-79f69-c-abc-and-does-not-store-it-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-79f69-c-abc-and-does-not-store-it-chromium\error-context.md
+
+  20) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:322:5 › EMR-67 Social History - No. of Children whole-number validation › I. Additional findings › EMR67-OBS-01 a single edit made right after opening the draft is saved 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "3"
+    Received: ""
+
+      326 |       await sh.continueButton.click();
+      327 |       await sh.page.waitForTimeout(5000);
+    > 328 |       expect(String((await sh.apiGetForm()).data.dependentChildrenFemale ?? '')).toBe('3');
+          |                                                                                  ^
+      329 |     });
+      330 |   });
+      331 | });
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:328:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-1a451--opening-the-draft-is-saved-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-1a451--opening-the-draft-is-saved-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-1a451--opening-the-draft-is-saved-chromium\error-context.md
+
+  20 failed
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Male 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Dependent/Female 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Male 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:123:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-06 typing "1.5" is rejected in Independent/Female 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:129:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-07 typing a fraction below one ("0.5") is rejected 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:134:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-08 pasting a decimal ("2.75") is rejected 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:139:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-09 typing a decimal with a zero fraction ("2.0") is stored as the whole number 2 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:145:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are rejected in the UI › EMR67-TC-10 comma decimal "1,5" must not silently become 15 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:207:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-17 a decimal value cannot be saved 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:219:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-18 the saved record and its total never disagree 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:249:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-21 summary never shows a value different from what was entered 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenMale 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenFemale 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenMale 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:272:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenFemale 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal string "1.5" and does not store it 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal number 2.5 and does not store it 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects negative "-1" and does not store it 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:280:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects non-numeric "abc" and does not store it 
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:322:5 › EMR-67 Social History - No. of Children whole-number validation › I. Additional findings › EMR67-OBS-01 a single edit made right after opening the draft is saved 
+  19 passed (19.2m)
+PUT 200
+mismatched keys after restore: []

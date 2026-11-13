@@ -1,0 +1,22 @@
+require('dotenv').config();
+const { chromium } = require('@playwright/test');
+const { SocialHistoryPage } = require('../pages/SocialHistoryPage');
+const BASE = (process.env.BASE_URL || '').replace(/\/+$/, '');
+const pick = (d) => SocialHistoryPage.FIELDS.map((f) => `${f.key}=${JSON.stringify(d?.[f.key])}`).join(' ');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await (await browser.newContext({ storageState: '.auth/user.json', baseURL: BASE, viewport: { width: 1440, height: 900 } })).newPage();
+  const t0 = Date.now(); const t = () => ((Date.now() - t0) / 1000).toFixed(1) + 's';
+  page.on('request', (r) => { if (r.method() === 'PUT') console.log(t(), 'PUT ', pick(JSON.parse(r.postData()).data)); });
+  page.on('response', (r) => { if (r.request().method() === 'PUT') console.log(t(), 'RESP', r.status()); });
+  const sh = new SocialHistoryPage(page);
+  await sh.goto(); await sh.primeAutosave(); console.log(t(), 'primed');
+  const saved = await sh.enterAndCaptureSave([['Dependent', 'Male', '2'], ['Dependent', 'Female', '1'], ['Independent', 'Male', '0'], ['Independent', 'Female', '3']]);
+  console.log(t(), 'merged', pick(saved));
+  console.log(t(), 'server', pick((await sh.apiGetForm()).data));
+  await page.waitForTimeout(5000);
+  console.log(t(), 'server+5s', pick((await sh.apiGetForm()).data));
+  await sh.reloadAndReopen();
+  console.log(t(), 'UI after reload', await Promise.all(SocialHistoryPage.FIELDS.map((f) => sh.getChildren(f.group, f.gender))));
+  await page.close(); await browser.close();
+})();

@@ -1,0 +1,23 @@
+require('dotenv').config();
+const { chromium } = require('@playwright/test');
+const { SocialHistoryPage } = require('../pages/SocialHistoryPage');
+const BASE = (process.env.BASE_URL || '').replace(/\/+$/, '');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await (await browser.newContext({ storageState: '.auth/user.json', baseURL: BASE, viewport: { width: 1440, height: 900 } })).newPage();
+  const t0 = Date.now(); const t = () => ((Date.now() - t0) / 1000).toFixed(1) + 's';
+  page.on('request', (r) => { if (r.method() === 'PUT') console.log(t(), 'PUT', (r.postData() || '').match(/"dependentChildrenMale":"[^"]*"/)?.[0]); });
+  const sh = new SocialHistoryPage(page);
+  await sh.goto(); console.log(t(), 'on Social History');
+  await sh.typeChildren('Dependent', 'Male', '1'); console.log(t(), 'typed 1');
+  await page.waitForTimeout(25000);
+  await sh.typeChildren('Dependent', 'Male', '2'); console.log(t(), 'typed 2');
+  await page.waitForTimeout(3000);
+  await sh.typeChildren('Dependent', 'Male', '3'); console.log(t(), 'typed 3');
+  await page.waitForTimeout(25000);
+  console.log(t(), '--- type 4 then Continue immediately');
+  await sh.typeChildren('Dependent', 'Male', '4'); await sh.continueButton.click(); console.log(t(), 'continue clicked');
+  await page.waitForTimeout(25000);
+  console.log(t(), 'server:', (await sh.apiGetForm()).data.dependentChildrenMale);
+  await page.close(); await browser.close();
+})();

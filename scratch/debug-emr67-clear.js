@@ -1,0 +1,20 @@
+require('dotenv').config();
+const { chromium } = require('@playwright/test');
+const { SocialHistoryPage } = require('../pages/SocialHistoryPage');
+const BASE = (process.env.BASE_URL || '').replace(/\/+$/, '');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await (await browser.newContext({ storageState: '.auth/user.json', baseURL: BASE, viewport: { width: 1440, height: 900 } })).newPage();
+  const sh = new SocialHistoryPage(page);
+  await sh.goto();
+  const i = sh.childrenInput('Dependent', 'Male');
+  console.log('start', JSON.stringify(await i.inputValue()));
+  await i.fill('2'); console.log('fill 2 ->', await i.inputValue());
+  await i.fill(''); console.log("fill '' ->", JSON.stringify(await i.inputValue()));
+  await i.fill('2'); await i.selectText(); await page.keyboard.press('Backspace'); console.log('select+Backspace ->', JSON.stringify(await i.inputValue()));
+  await i.fill('7'); await i.press('Control+a'); await i.pressSequentially('3'); console.log('ctrl+a, type 3 ->', JSON.stringify(await i.inputValue()));
+  await page.waitForTimeout(2500);
+  const mark = sh.markSave(); await i.fill(''); const saved = await sh.waitForSave(mark); console.log("autosave after clearing:", saved && saved.dependentChildrenMale);
+  await page.close();
+  await browser.close();
+})();

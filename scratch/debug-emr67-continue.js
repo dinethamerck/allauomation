@@ -1,0 +1,21 @@
+require('dotenv').config();
+const { chromium } = require('@playwright/test');
+const { SocialHistoryPage } = require('../pages/SocialHistoryPage');
+const BASE = (process.env.BASE_URL || '').replace(/\/+$/, '');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await (await browser.newContext({ storageState: '.auth/user.json', baseURL: BASE, viewport: { width: 1440, height: 900 } })).newPage();
+  page.on('request', (r) => { if (!/google|cdn-cgi|\.(js|css|png|svg|woff2?)(\?|$)/.test(r.url())) console.log('  REQ', r.method(), r.url().slice(0, 110)); });
+  const sh = new SocialHistoryPage(page);
+  console.log('--- goto'); await sh.goto();
+  console.log('url', page.url());
+  console.log('--- type'); await sh.typeChildren('Dependent', 'Male', '2'); await page.waitForTimeout(2000);
+  console.log('--- continue'); await sh.continueButton.click(); await page.waitForTimeout(4000);
+  console.log('url', page.url());
+  console.log('--- back to SH, type 1.5, open summary');
+  await sh.openSocialHistory(); await sh.typeChildren('Dependent', 'Female', '1.5');
+  await sh.openSummary();
+  const txt = await page.locator('text=Dependent Children').evaluateAll((els) => els.map((e) => ({ tag: e.tagName, vis: !!e.offsetParent, next: e.nextElementSibling?.outerHTML?.slice(0, 200), parent: e.parentElement?.outerHTML.slice(0, 300) })));
+  console.log(JSON.stringify(txt, null, 1));
+  await browser.close();
+})();

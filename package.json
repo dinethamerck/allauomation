@@ -1,0 +1,28 @@
+{
+  "name": "emr-admission-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end and integration tests for AMERCK CARE QA Environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:unit": "playwright test -c playwright.unit.config.js",
+    "test:unit:report": "playwright show-report playwright-report-unit"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "emr",
+    "admission-wizard",
+    "qa",
+    "automation"
+  ],
+  "author": "Antigravity QA Automation Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.7"
+  }
+}

@@ -1,0 +1,82 @@
+◇ injected env (3) from .env
+◇ injected env (0) from .env
+[global-setup] Auth token is valid until 2026-11-04T05:05:59.000Z
+
+Running 41 tests using 1 worker
+
+◇ injected env (0) from .env
+  ok  1 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:77:5 › EMR-67 Social History - No. of Children whole-number validation › A. Rendering › EMR67-TC-01 all four children count fields are displayed under "No. of Children" (33.5s)
+  ok  2 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:87:5 › EMR-67 Social History - No. of Children whole-number validation › A. Rendering › EMR67-TC-02 every children field is a numeric input with minimum 0 (27.2s)
+  ok  3 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:100:5 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-03 accepts 0 (boundary minimum) in every field (29.9s)
+  ok  4 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:109:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 1 in every field (30.8s)
+  ok  5 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:109:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 2 in every field (26.8s)
+  ok  6 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:109:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 3 in every field (36.8s)
+  ok  7 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:109:7 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-04 accepts whole number 12 in every field (43.3s)
+  ok  8 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:118:5 › EMR-67 Social History - No. of Children whole-number validation › B. Valid whole numbers › EMR67-TC-05 ArrowUp/ArrowDown step by 1 and never go below 0 (29.2s)
+  ok  9 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:137:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-06 typing "1.5" - the "." is blocked, field holds digits only (Dependent/Male) (34.6s)
+  ok 10 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:137:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-06 typing "1.5" - the "." is blocked, field holds digits only (Dependent/Female) (33.2s)
+  ok 11 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:137:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-06 typing "1.5" - the "." is blocked, field holds digits only (Independent/Male) (38.1s)
+  ok 12 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:137:7 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-06 typing "1.5" - the "." is blocked, field holds digits only (Independent/Female) (25.9s)
+  ok 13 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:146:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-07 typing "0.5" / ".5" - the "." is blocked, only digits remain (23.7s)
+  ok 14 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:154:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-08 pasting a decimal keeps only the whole-number part (21.2s)
+  ok 15 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:162:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-09 typing "2.0" - the "." is blocked and the whole number 20 is saved (26.1s)
+  ok 16 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:169:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-10 comma decimal "1,5" - the "," is blocked, field holds digits only (23.1s)
+  ok 17 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:175:5 › EMR-67 Social History - No. of Children whole-number validation › C. Decimal values are blocked in the UI › EMR67-TC-10b no validation message is shown when a separator is blocked (30.1s)
+  ok 18 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:186:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-11 typing "-1" - the "-" is blocked in every field (36.3s)
+  ok 19 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:193:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-12 pasting a negative value is clamped to 0 (21.3s)
+  ok 20 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:198:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-13 scientific notation is blocked (typed "1e2" -> 12, pasted "1e2" -> 1) (20.5s)
+  ok 21 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:206:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-14 letters and symbols are ignored ("abc+#" -> empty, "+2" -> 2) (19.7s)
+  ok 22 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:213:5 › EMR-67 Social History - No. of Children whole-number validation › D. Negative and non-numeric input › EMR67-TC-14b leading zeros are normalised ("007" -> 7) (22.6s)
+  x  23 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:223:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-15 valid whole numbers are saved exactly and persist after reload (48.7s)
+◇ injected env (0) from .env
+  ok 24 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:235:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-16 totals equal Male + Female for each group (53.6s)
+  ok 25 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:245:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-17 a decimal is never saved from the UI (payload and after reload) (48.7s)
+  ok 26 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:255:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-18 the saved total always equals the saved breakdown (42.7s)
+  ok 27 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:262:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-19 a count can be cleared (field is optional) and stays cleared after reload (32.6s)
+  ok 28 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:277:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-20 summary shows the entered whole numbers (18.6s)
+  ok 29 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:284:5 › EMR-67 Social History - No. of Children whole-number validation › F. Admission Summary › EMR67-TC-21 summary shows exactly what is in the field (17.6s)
+  x  30 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:307:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenMale (28.1s)
+  x  31 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:307:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for dependentChildrenFemale (31.7s)
+  x  32 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:307:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenMale (22.0s)
+  x  33 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:307:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-22 API rejects a decimal for independentChildrenFemale (19.4s)
+  x  34 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:316:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal string "1.5" and does not store it (28.9s)
+  x  35 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:316:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects decimal number 2.5 and does not store it (18.6s)
+  x  36 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:316:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects negative "-1" and does not store it (20.3s)
+  x  37 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:316:7 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-23 API rejects non-numeric "abc" and does not store it (17.9s)
+  ok 38 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:326:5 › EMR-67 Social History - No. of Children whole-number validation › G. Backend validation › EMR67-TC-24 API accepts a valid whole number (23.2s)
+  ok 39 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:337:5 › EMR-67 Social History - No. of Children whole-number validation › H. Regression › EMR67-TC-25 Occupation still accepts free text and saves (26.4s)
+  ok 40 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:347:5 › EMR-67 Social History - No. of Children whole-number validation › H. Regression › EMR67-TC-26 Continue moves to Step 9 (Drug History) with valid counts (30.7s)
+  x  41 [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:359:5 › EMR-67 Social History - No. of Children whole-number validation › I. Additional findings › EMR67-OBS-01 a value typed while the form is still loading is saved (21.6s)
+
+
+  1) [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:223:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-15 valid whole numbers are saved exactly and persist after reload 
+
+    Error: Dependent/Male
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: ""
+
+      230 |
+      231 |       await sh.reloadAndReopen();
+    > 232 |       for (const f of FIELDS) expect(await sh.getChildren(f.group, f.gender), label(f)).toBe(values[label(f)]);
+          |                                                                                         ^
+      233 |     });
+      234 |
+      235 |     test('EMR67-TC-16 totals equal Male + Female for each group', async () => {
+        at C:\Users\LENOVO\Desktop\JPURA\tests\EMR-67\emr-67-social-history-children.spec.js:232:89
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-2db2f-ly-and-persist-after-reload-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\EMR-67-emr-67-social-histo-2db2f-ly-and-persist-after-reload-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\EMR-67-emr-67-social-histo-2db2f-ly-and-persist-after-reload-chromium\error-context.md
+
+  1 failed
+    [chromium] › tests\EMR-67\emr-67-social-history-children.spec.js:223:5 › EMR-67 Social History - No. of Children whole-number validation › E. Save and persistence › EMR67-TC-15 valid whole numbers are saved exactly and persist after reload 
+  40 passed (19.9m)
