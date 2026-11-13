@@ -1,0 +1,28 @@
+{
+  "name": "optical-sms-automation",
+  "version": "1.0.0",
+  "description": "Playwright + JavaScript suite for Amerck Optical SMS (transactional + scheduled)",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:config": "playwright test --grep @config",
+    "test:smslog": "playwright test --grep @smslog",
+    "test:lifecycle": "playwright test tests/04-order-lifecycle",
+    "test:sms": "playwright test --grep @sms",
+    "test:scheduled": "playwright test --grep @scheduled",
+    "test:negative": "playwright test --grep @negative",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "restore-config": "node scripts/restore-config.js",
+    "test:bugs": "playwright test --grep @bugs"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "dotenv": "^16.4.5"
+  },
+  "private": true
+}
