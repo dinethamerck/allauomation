@@ -1,0 +1,25 @@
+{
+  "name": "qa-aesthertic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report",
+    "test:auth": "npx playwright test --grep TC-AUTH",
+    "test:modal": "npx playwright test --grep TC-MODAL",
+    "test:import": "npx playwright test --grep TC-IMPORT",
+    "test:valid": "npx playwright test --grep TC-VALID",
+    "test:inventory": "npx playwright test --grep TC-INVENTORY",
+    "test:ux": "npx playwright test --grep TC-UX",
+    "test:e2e": "npx playwright test --grep TC-E2E",
+    "test:debug": "npx playwright test --debug"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}

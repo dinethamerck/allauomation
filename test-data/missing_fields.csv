@@ -1,0 +1,5 @@
+,Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Name,SKU,Brand,Supplier Name ,Unit,Expiry Date, Buying price , Selling Price ,$,10%,20%,Staff ,Stock count,,,,,,,,,,,,,,,,,
+1,,MISS001,TestBrand,Test Supplier,10ml,10/6/2027,500.00,1000.00,,550.00,600.00,,10,,,,,,,,,,,,,,,,,
+2,Missing Price Product,MISS002,TestBrand,Test Supplier,50ml,10/7/2027,,500.00,,220.00,240.00,,5,,,,,,,,,,,,,,,,,

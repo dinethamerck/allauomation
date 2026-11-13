@@ -1,0 +1,4 @@
+This is not a valid CSV file.
+It contains plain text and no proper comma-separated values.
+Name; SKU; Price
+Product1; SKU001; 100
