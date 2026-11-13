@@ -1,0 +1,30 @@
+{
+  "name": "qa-care-prescription-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive E2E and Functional Automated Test Suite for Amerck QA Care Prescription Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:archive": "node scripts/run-and-archive.js",
+    "evidence:archive": "node scripts/archive-evidence.js",
+    "evidence:shareable": "node scripts/generate-shareable-evidence.js",
+    "evidence:list": "node scripts/list-evidence.js",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "playwright",
+    "emr",
+    "prescription",
+    "test-automation",
+    "qa"
+  ],
+  "author": "Antigravity QA Engineering",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.7"
+  }
+}

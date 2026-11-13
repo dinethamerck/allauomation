@@ -1,0 +1,44 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.1714032314.1793101307",
+      "domain": ".amerck.care",
+      "path": "/",
+      "expires": 1827661306.842822,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_HF9G857C8Z",
+      "value": "GS2.1.s1793101306$o1$g0$t1793101306$j60$l0$h0",
+      "domain": ".amerck.care",
+      "path": "/",
+      "expires": 1827661306.868372,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://qa_pg.amerck.care",
+      "localStorage": [
+        {
+          "name": "token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTc3LCJyb2xlcyI6W3siaWQiOjM1MCwibmFtZSI6IkFkbWluIn0seyJpZCI6MzUxLCJuYW1lIjoiRG9jdG9yIn1dLCJob3NwaXRhbCI6MTIxLCJvcmdfaWQiOjEyMSwicGVybWlzc2lvbnMiOnsiUGF0aWVudHMiOiJyd2NkIiwiRHJ1Z3MiOiJyd2NkIiwiSW52ZXN0aWdhdGlvbnMiOiJyd2NkIiwiUHJlc2NyaXB0aW9ucyI6InJ3Y2QiLCJQcmVzY3JpcHRpb24iOiJyd2NkIiwiT3BkIjoiLS0tLSIsIlVzZXJzIjoicndjZCIsIkhvc3BpdGFscyI6InJ3Y2QiLCJMZXR0ZXJzIjoicndjZCIsIkRpYWdub3NpcyI6InJ3Y2QiLCJBZG1pc3Npb25zIjoicndjZCIsIlRlbGVtZWRpY2luZSI6InJ3Y2QiLCJSZXBvcnRzIjoicndjZCIsIlNjaGVkdWxlIjoicndjZCIsIkxhYnMiOiJyd2NkIn0sImlzU3VwZXJBZG1pbiI6ZmFsc2UsImRvY3RvciI6eyJpZCI6MTAyLCJ1c2VyX2lkIjoxNzcsIm5hbWUiOiJKYW5pdGhhIFJhc2FkdW4iLCJzcGVjaWFsaXR5IjpudWxsLCJkaXNwbGF5X25hbWUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJxdWFsaWZpY2F0aW9uIjpudWxsLCJsaWNlbnNlTnVtYmVyIjoiMTIzNDU2IiwiY29udGFjdE51bWJlciI6IjA3NDEyMjI4NzAiLCJiaW8iOm51bGwsIndvcmtfYWRkcmVzcyI6bnVsbCwiY3VzdG9tX2Rlc2lnbmF0aW9uIjpudWxsLCJjbGluaWNhbFR5cGUiOiJEb2N0b3IiLCJob3VybHlSYXRlIjoiMCIsImRlZmF1bHRTZXNzaW9uRHVyYXRpb24iOjE1LCJtb2JpbGVfbnVtYmVyIjoiMDc0MTIyMjg3MCIsIm5pYyI6IjIwMDMwMjQwMDk4MiIsImNyZWF0ZWRBdCI6IjIwMjYtMDgtMTlUMTU6NDU6MTkuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDgtMTlUMTU6NDU6MTkuMDAwWiJ9LCJpYXQiOjE3OTMxMDEzMDYsImV4cCI6MTc5MzE4NzcwNn0.PxXy466BmpXCjuFstf14u4iPRL4zzoJQ-GtOe5xdTpk"
+        }
+      ]
+    },
+    {
+      "origin": "https://qa_care.amerck.com",
+      "localStorage": [
+        {
+          "name": "token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTc3LCJyb2xlcyI6W3siaWQiOjM1MCwibmFtZSI6IkFkbWluIn0seyJpZCI6MzUxLCJuYW1lIjoiRG9jdG9yIn1dLCJob3NwaXRhbCI6MTIxLCJvcmdfaWQiOjEyMSwicGVybWlzc2lvbnMiOnsiUGF0aWVudHMiOiJyd2NkIiwiRHJ1Z3MiOiJyd2NkIiwiSW52ZXN0aWdhdGlvbnMiOiJyd2NkIiwiUHJlc2NyaXB0aW9ucyI6InJ3Y2QiLCJQcmVzY3JpcHRpb24iOiJyd2NkIiwiT3BkIjoiLS0tLSIsIlVzZXJzIjoicndjZCIsIkhvc3BpdGFscyI6InJ3Y2QiLCJMZXR0ZXJzIjoicndjZCIsIkRpYWdub3NpcyI6InJ3Y2QiLCJBZG1pc3Npb25zIjoicndjZCIsIlRlbGVtZWRpY2luZSI6InJ3Y2QiLCJSZXBvcnRzIjoicndjZCIsIlNjaGVkdWxlIjoicndjZCIsIkxhYnMiOiJyd2NkIn0sImlzU3VwZXJBZG1pbiI6ZmFsc2UsImRvY3RvciI6eyJpZCI6MTAyLCJ1c2VyX2lkIjoxNzcsIm5hbWUiOiJKYW5pdGhhIFJhc2FkdW4iLCJzcGVjaWFsaXR5IjpudWxsLCJkaXNwbGF5X25hbWUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJxdWFsaWZpY2F0aW9uIjpudWxsLCJsaWNlbnNlTnVtYmVyIjoiMTIzNDU2IiwiY29udGFjdE51bWJlciI6IjA3NDEyMjI4NzAiLCJiaW8iOm51bGwsIndvcmtfYWRkcmVzcyI6bnVsbCwiY3VzdG9tX2Rlc2lnbmF0aW9uIjpudWxsLCJjbGluaWNhbFR5cGUiOiJEb2N0b3IiLCJob3VybHlSYXRlIjoiMCIsImRlZmF1bHRTZXNzaW9uRHVyYXRpb24iOjE1LCJtb2JpbGVfbnVtYmVyIjoiMDc0MTIyMjg3MCIsIm5pYyI6IjIwMDMwMjQwMDk4MiIsImNyZWF0ZWRBdCI6IjIwMjYtMDgtMTlUMTU6NDU6MTkuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDgtMTlUMTU6NDU6MTkuMDAwWiJ9LCJpYXQiOjE3OTMxMDEzMDYsImV4cCI6MTc5MzE4NzcwNn0.PxXy466BmpXCjuFstf14u4iPRL4zzoJQ-GtOe5xdTpk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "folderName": "2026-10-22_14-01-50",
+    "executionTimestamp": "2026-10-22T08:31:50.584Z",
+    "timestampFormatted": "10/22/2026, 2:01:50 PM",
+    "total": 25,
+    "passed": 23,
+    "failed": 0,
+    "flaky": 2,
+    "hasZip": true,
+    "zipSize": "291.45 MB"
+  },
+  {
+    "folderName": "2026-10-22_13-39-35",
+    "executionTimestamp": "2026-10-22T08:09:35.951Z",
+    "timestampFormatted": "10/22/2026, 1:39:35 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "5.06 MB"
+  },
+  {
+    "folderName": "2026-10-22_13-38-48",
+    "executionTimestamp": "2026-10-22T08:08:48.717Z",
+    "timestampFormatted": "10/22/2026, 1:38:48 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "14.19 MB"
+  },
+  {
+    "folderName": "2026-10-22_13-37-31",
+    "executionTimestamp": "2026-10-22T08:07:31.558Z",
+    "timestampFormatted": "10/22/2026, 1:37:31 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "15.03 MB"
+  },
+  {
+    "folderName": "2026-10-22_12-53-19",
+    "executionTimestamp": "2026-10-22T07:23:19.169Z",
+    "timestampFormatted": "10/22/2026, 12:53:19 PM",
+    "total": 9,
+    "passed": 6,
+    "failed": 1,
+    "flaky": 2,
+    "hasZip": true,
+    "zipSize": "132.64 MB"
+  },
+  {
+    "folderName": "2026-10-22_12-49-01",
+    "executionTimestamp": "2026-10-22T07:19:01.481Z",
+    "timestampFormatted": "10/22/2026, 12:49:01 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "9.72 MB"
+  },
+  {
+    "folderName": "2026-10-22_12-46-19",
+    "executionTimestamp": "2026-10-22T07:16:19.744Z",
+    "timestampFormatted": "10/22/2026, 12:46:19 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "13.96 MB"
+  },
+  {
+    "folderName": "2026-10-22_12-41-26",
+    "executionTimestamp": "2026-10-22T07:11:26.549Z",
+    "timestampFormatted": "10/22/2026, 12:41:26 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "12.83 MB"
+  },
+  {
+    "folderName": "2026-10-22_12-40-09",
+    "executionTimestamp": "2026-10-22T07:10:09.403Z",
+    "timestampFormatted": "10/22/2026, 12:40:09 PM",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "10.4 MB"
+  },
+  {
+    "folderName": "2026-10-22_11-26-55",
+    "executionTimestamp": "2026-10-22T05:56:55.186Z",
+    "timestampFormatted": "10/22/2026, 11:26:55 AM",
+    "total": 219,
+    "passed": 197,
+    "failed": 19,
+    "flaky": 3,
+    "hasZip": true,
+    "zipSize": "2.48 GB"
+  },
+  {
+    "folderName": "2026-10-22_10-22-12",
+    "executionTimestamp": "2026-10-22T04:52:12.503Z",
+    "timestampFormatted": "10/22/2026, 10:22:12 AM",
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "flaky": 0,
+    "hasZip": true,
+    "zipSize": "19.1 MB"
+  }
+]
